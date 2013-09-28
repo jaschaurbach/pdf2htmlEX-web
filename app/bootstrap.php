@@ -64,7 +64,7 @@ $app->match('/', function (Request $request) use ($app, $uploadsDir) {
             if (!mkdir("$uploadsDir/$hash.tmp")) {
                 throw new Exception("Can't create temporary folder.");
             }
-            exec("nohup bash -c 'cd $uploadsDir; pdf2htmlEX --embed cfijo --dest-dir $hash.tmp \"$targetFileName\"; mv $hash.tmp $hash' > /dev/null 2>&1 &");
+            exec("nohup bash -c 'cd $uploadsDir; pdf2htmlEX --embed cfijo --dest-dir $hash.tmp \"$targetFileName\"; mv $hash.tmp $hash; [ \"$(ls -A $hash)\" ] || rmdir $hash' > /dev/null 2>&1 &");
         }
         
     } catch (Exception $e) {
