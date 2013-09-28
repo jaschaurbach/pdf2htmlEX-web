@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            {% if error %}
+                <div class="alert alert-danger">
+                    {{ error }}
+                </div>
+            {% endif %}
+            <div class="well">
+                <form class="form-inline"
+                      role="form"
+                      method="post"
+                      enctype="multipart/form-data">
+                    <div class="form-group">
+                        <label for="file">Upload your PDF file here:</label>
+                        <input type="file" name="file" id="file" />
+                    </div>
+                    <button type="submit" class="btn btn-success">Submit</button>
+                </form>
+            </div>
+            <table class="table table-striped">
+                <tr>
+                    <th>File name</th>
+                    <th>Status</th>
+                    <th></th>
+                </tr>
+                {% for hash, data in files %}
+                    <tr>
+                        <td>{{ data.filename }}</td>
+                        <td>{{ data.status }}</td>
+                        <td>
+                            <a href="/uploads/{{ hash ~ '-' ~ data.filename }}">PDF</a>
+                            {% if 'converted' == data.status %}
+                                |
+                                <a href="/uploads/{{ hash }}/{{ hash ~ '-' ~ data.basename }}.html">HTML</a>
+                            {% endif %}
+                        </td>
+                    </tr>
+                {% endfor %}
+            </table>
+        </div>
+    </body>
+</html>
