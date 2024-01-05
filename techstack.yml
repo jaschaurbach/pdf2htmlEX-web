@@ -1,0 +1,82 @@
+repo_name: jaschaurbach/pdf2htmlEX-web
+report_id: 887d2c0e53438c2cf653fb4425d135bb
+version: 0.1
+repo_type: Public
+timestamp: '2024-01-05T09:32:56+00:00'
+requested_by: isanosyan
+provider: github
+branch: master
+detected_tools_count: 6
+tools:
+- name: PHP
+  description: A popular general-purpose scripting language that is especially suited
+    to web development
+  website_url: http://www.php.net/
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/991/hwUcGZ41_400x400.jpg
+  detection_source_url: https://github.com/jaschaurbach/pdf2htmlEX-web
+  detection_source: Repo Metadata
+- name: Twig
+  description: A flexible, fast, and secure template engine
+  website_url: https://twig.symfony.com/
+  open_source: false
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Frameworks (Full Stack)
+  image_url: https://img.stackshare.io/service/1642/default_3debd3a9a6d757c011130c7a9626e7c3bd8be945.png
+  detection_source_url: https://github.com/jaschaurbach/pdf2htmlEX-web/blob/master/composer.json
+  detection_source: composer.json
+  last_updated_by: Ilya Sanosyan
+  last_updated_on: 2013-09-28 19:57:41.000000000 Z
+- name: Git
+  description: Fast, scalable, distributed revision control system
+  website_url: http://git-scm.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Version Control System
+  image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/jaschaurbach/pdf2htmlEX-web
+  detection_source: Repo Metadata
+- name: silex/silex
+  description: The PHP micro-framework based on the Symfony Components
+  package_url: https://packagist.org/silex/silex
+  version: 1.1.0
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/packagist/image.png
+  detection_source_url: https://github.com/jaschaurbach/pdf2htmlEX-web/blob/master/composer.lock
+  detection_source: composer.json
+  last_updated_by: Ilya Sanosyan
+  last_updated_on: 2013-09-28 19:57:41.000000000 Z
+- name: symfony/twig-bridge
+  description: Provides integration for Twig with various Symfony components
+  package_url: https://packagist.org/symfony/twig-bridge
+  version: 2.2.8
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/packagist/image.png
+  detection_source_url: https://github.com/jaschaurbach/pdf2htmlEX-web/blob/master/composer.lock
+  detection_source: composer.json
+  last_updated_by: Ilya Sanosyan
+  last_updated_on: 2013-09-28 19:57:41.000000000 Z
+- name: twig/twig
+  description: Twig
+  package_url: https://packagist.org/twig/twig
+  version: 1.13.2
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/packagist/image.png
+  detection_source_url: https://github.com/jaschaurbach/pdf2htmlEX-web/blob/master/composer.lock
+  detection_source: composer.json
+  last_updated_by: Ilya Sanosyan
+  last_updated_on: 2013-09-28 19:57:41.000000000 Z
